@@ -2,21 +2,21 @@
 
 # -----------------------------------------------------------------------------
 # Site settings
-title: Jacopo Teneggi # the website title (if blank, full name will be used instead)
-first_name: Jacopo
-last_name: Teneggi
-email: jtenegg1@jhu.edu
+title: Beepul Bharti # the website title (if blank, full name will be used instead)
+first_name: Beepul
+last_name: Bharti
+email: bbharti1@jhu.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: phd, student, machine learning, weakly-supervised learning # add your own keywords or leave empty
+keywords: phd, student, machine learning, fairness, interpretability # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://jacopoteneggi.github.io # the base hostname & protocol for your site
+url: https://beepulbharti.github.io # the base hostname & protocol for your site
 baseurl: > # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -51,20 +51,20 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: JacopoTeneggi
-twitter_username: JacopoTeneggi
-linkedin_username: Jacopo Teneggi
+github_username: beepulbharti
+twitter_username: BeepulBharti
+linkedin_username: bbharti
 scholar_userid: Jacopo Teneggi
-orcid_id: https://orcid.org/0000-0003-2189-5192
+orcid_id: 
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to reach out via email, Linkedin, or Twitter!.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
-google_analytics: G-WKL1C3E8HK
+google_analytics: G-G79V0DM9ZM
 panelbear_analytics: # panelbear analytics site ID (format: XXXXXXXXX)
 
 google_site_verification: # your google-site-verification ID (Google Search Console)
@@ -184,8 +184,8 @@ display_tags: ["formatting", "images", "links", "math", "code"] # this tags will
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: Teneggi
-  first_name: [Jacopo]
+  last_name: Bharti
+  first_name: [Beepul]
 
   style: apa
   locale: en
