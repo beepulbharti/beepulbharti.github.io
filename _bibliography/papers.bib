@@ -1,32 +1,17 @@
 ---
 ---
-@article{teneggi2023trust,
-  title        = {How to Trust Your Diffusion model: A Convex Optimization Approach to Conformal Risk Control},
-  author       = {Teneggi, Jacopo and Tivnan, Matthew and Stayman, Web and Sulam, Jeremias},
-  booktitle    = {International Conference on Machine Learning},
-  pages        = {33940--33960},
+@article{bharti2023estimating,
+  title        = {Estimating and Controlling for Equalized Odds via Sensitive Attribute Predictors},
+  author       = {Bharti, Beepul and Yi, Paul and Sulam, Jeremias},
+  booktitle    = {Thirty-sevent Conference on Neural Information Processing Systems},
   year         = {2023},
-  organization = {PMLR},
   selected     = {true},
-  abbr         = {ICML},
-  date         = {Jul. 23, 2023},
-  abstract     = {Score-based generative modeling, informally referred to as diffusion models, continue to grow in popularity across several important domains and tasks. While they provide high-quality and diverse samples from empirical distributions, important questions remain on the reliability and trustworthiness of these sampling procedures for their responsible use in critical scenarios. Conformal prediction is a modern tool to construct finite-sample, distribution-free uncertainty guarantees for any black-box predictor. In this work, we focus on image-to-image regression tasks and we present a generalization of the Risk-Controlling Prediction Sets (RCPS) procedure, that we term K-RCPS, which allows to (i) provide entrywise calibrated intervals for future samples of any diffusion model, and (ii) control a certain notion of risk with respect to a ground truth image with minimal mean interval length. Differently from existing conformal risk control procedures, ours relies on a novel convex optimization approach that allows for multidimensional risk control while provably minimizing the mean interval length. We illustrate our approach on two real-world image denoising problems: on natural images of faces as well as on computed tomography (CT) scans of the abdomen, demonstrating state of the art performance.}
-}
+  abbr         = {NeurIPS},
+  date         = {Dec. 13, 2023},
+  abstract     = {As the use of machine learning models in real world high-stakes decision settings continues to grow, it is highly important that we are able to audit and control for any potential fairness violations these models may exhibit towards certain groups. To do so, one naturally requires access to sensitive attributes, such as demographics, biological sex, or other potentially sensitive features that determine group membership. Unfortunately, in many settings, this information is often unavailable. In this work we study the well known equalized odds (EOD) definition of fairness. In a setting without sensitive attributes, we first provide tight and computable upper bounds for the EOD violation of a predictor. These bounds precisely reflect the worst possible EOD violation. Second, we demonstrate how one can provably control the worst-case EOD by a new post-processing correction method. Our results characterize when directly controlling for EOD with respect to the predicted sensitive attributes is -- and when is not -- optimal when it comes to controlling worst-case EOD. Our results hold under assumptions that are milder than previous works, and we illustrate these results with experiments on synthetic and real datasets.}
 
-@article{teneggi2022weakly,
-  title    = {Weakly Supervised Learning Significantly Reduces the Number of Labels Required for Intracranial Hemorrhage Detection on Head CT},
-  author   = {Teneggi, Jacopo and Yi, Paul H. and Sulam, Jeremias},
-  journal  = {arXiv preprint arXiv:2211.15924},
-  year     = {2022},
-  preprint = {true},
-  abbr     = {arxiv},
-  date     = {Nov. 29, 2022},
-  url      = {https://arxiv.org/abs/2211.15924},
-  abstract = {Modern machine learning pipelines, in particular those based on deep learning (DL) models, require large amounts of labeled data. For classification problems, the most common learning paradigm consists of presenting labeled examples during training, thus providing strong supervision on what constitutes positive and negative samples. As a result, the adequate training of these models demands the curation of large datasets with high-quality labels. This constitutes a major obstacle for the development of DL models in radiology—in particular for cross-sectional imaging (e.g., computed tomography [CT] scans)—where labels must come from manual annotations by expert radiologists at the image or slice-level. These differ from examination-level annotations, which are coarser but cheaper, and could be extracted from radiology reports using natural language processing techniques. This work studies the question of what kind of labels should be collected for the problem of intracranial hemorrhage detection in brain CT. We investigate whether image-level annotations should be preferred to examination-level ones. By framing this task as a multiple instance learning (MIL) problem, and employing modern attention-based DL architectures, we analyze the degree to which different levels of supervision improve detection performance. We find that strong supervision (i.e., learning with local image-level annotations) and weak supervision (i.e., learning with only global examination-level labels) achieve comparable performance in examination-level hemorrhage detection (the task of selecting the images in an examination that show signs of hemorrhage) as well as in image-level hemorrhage detection (highlighting those signs within the selected images). Furthermore, we study this behavior as a function of the number of labels available during training. Our results suggest that local labels may not be necessary at all for these tasks, drastically reducing the time and cost involved in collecting and curating datasets.}
-}
-
-@article{teneggi2022shapley,
-  title    = {From Shapley Back to Pearson: Hypothesis Testing via the Shapley Value},
+@article{bharti2022shapley,
+  title    = {SHAP-XRT: The Shapley Value Meets Conditional Independence Testing},
   author   = {Teneggi, Jacopo* and Bharti, Beepul* and Romano, Yaniv and Sulam, Jeremias},
   journal  = {arXiv preprint arXiv:2207.07038},
   year     = {2022},
@@ -35,48 +20,5 @@
   date     = {Jul. 14, 2022},
   url      = {https://arxiv.org/abs/2207.07038},
   abstract = {Machine learning models, in particular artificial neural networks, are increasingly used to inform decision making in high-stakes scenarios across a variety of fields--from financial services, to public safety, and healthcare. While neural networks have achieved remarkable performance in many settings, their complex nature raises concerns on their reliability, trustworthiness, and fairness in real-world scenarios. As a result, several a-posteriori explanation methods have been proposed to highlight the features that influence a model's prediction. Notably, the Shapley value--a game theoretic quantity that satisfies several desirable properties--has gained popularity in the machine learning explainability literature. More traditionally, however, feature importance in statistical learning has been formalized by conditional independence, and a standard way to test for it is via Conditional Randomization Tests (CRTs). So far, these two perspectives on interpretability and feature importance have been considered distinct and separate. In this work, we show that Shapley-based explanation methods and conditional independence testing for feature importance are closely related. More precisely, we prove that evaluating a Shapley coefficient amounts to performing a specific set of conditional independence tests, as implemented by a procedure similar to the CRT but for a different null hypothesis. Furthermore, the obtained game-theoretic values upper bound the p-values of such tests. As a result, we grant large Shapley coefficients with a precise statistical sense of importance with controlled type I error.}
-}
-
-@article{teneggi2022fast,
-  title     = {Fast Hierarchical Games for Image Explanations},
-  author    = {Teneggi, Jacopo and Luster, Alexandre and Sulam, Jeremias},
-  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  year      = {2022},
-  publisher = {IEEE},
-  selected  = {true},
-  abbr      = {ieee tpami},
-  date      = {Jul. 11, 2022},
-  url       = {https://ieeexplore.ieee.org/document/9826424},
-  abstract  = {As modern complex neural networks keep breaking records and solving harder problems, their predictions also become less and less intelligible. The current lack of interpretability often undermines the deployment of accurate machine learning tools in sensitive settings. In this work, we present a model-agnostic explanation method for image classification based on a hierarchical extension of Shapley coefficients–Hierarchical Shap (h-Shap)–that resolves some of the limitations of current approaches. Unlike other Shapley-based explanation methods, h-Shap is scalable and can be computed without the need of approximation. Under certain distributional assumptions, such as those common in multiple instance learning, h-Shap retrieves the exact Shapley coefficients with an exponential improvement in computational complexity. We compare our hierarchical approach with popular Shapley-based and non-Shapley-based methods on a synthetic dataset, a medical imaging scenario, and a general computer vision problem, showing that h-Shap outperforms the state of the art in both accuracy and runtime. Code and experiments are made publicly available.}
-}
-
-@article{athey2021fitting,
-  title     = {Fitting Splines to Axonal Arbors Quantifies Relationship Between Branch Order and Geometry},
-  author    = {Athey, Thomas L and Teneggi, Jacopo and Vogelstein, Joshua T and Tward, Daniel J and Mueller, Ulrich and Miller, Michael I},
-  journal   = {Frontiers in Neuroinformatics},
-  pages     = {38},
-  year      = {2021},
-  publisher = {Frontiers},
-  selected  = {true},
-  abbr      = {front neurosci},
-  date      = {Aug. 11, 2021},
-  url       = {https://www.frontiersin.org/articles/10.3389/fninf.2021.704627/full},
-  abstract  = {Neuromorphology is crucial to identifying neuronal subtypes and understanding learning. It is also implicated in neurological disease. However, standard morphological analysis focuses on macroscopic features such as branching frequency and connectivity between regions, and often neglects the internal geometry of neurons. In this work, we treat neuron trace points as a sampling of differentiable curves and fit them with a set of branching B-splines. We designed our representation with the Frenet-Serret formulas from differential gemoetry in mind. The Frenet-Serret formulas completely characterize smooth curves, and involve two parameters, curvature and torsion. Our representation makes it possible to compute these parameters from neuron traces in closed form. These parameters are defined continuously along the curve, in contrast to other parameters like tortuosity which depend on start and end points. We applied our method to a dataset of cortical projection neurons traced in two mouse brains, and found that the parameters are distributed differently between primary, collateral, and terminal axon branches, thus quantifying geometric differences between different components of an axonal arbor. The results agreed in both brains, further validating our representation. The code used in this work can be readily applied to neuron traces in SWC format and is available in our open-source Python package brainlit: http://brainlit.neurodata.io/.}
-}
-
-@article{teneggi2021entropy,
-  title     = {Entropy estimation within in vitro neural-astrocyte networks as a measure of development instability},
-  author    = {Teneggi, Jacopo and Chen, Xin and Balu, Alan and Barrett, Connor and Grisolia, Giulia and Lucia, Umberto and Dzakpasu, Rhonda},
-  journal   = {Physical Review E},
-  volume    = {103},
-  number    = {4},
-  pages     = {042412},
-  year      = {2021},
-  publisher = {APS},
-  selected  = {true},
-  abbr      = {phys rev e},
-  date      = {Apr. 15, 2021},
-  url       = {https://journals.aps.org/pre/abstract/10.1103/PhysRevE.103.042412},
-  abstract  = {The brain demands a significant fraction of the energy budget in an organism; in humans, it accounts for 2% of the body mass, but utilizes 20% of the total energy metabolized. This is due to the large load required for information processing; spiking demands from neurons are high but are a key component to understanding brain functioning. Astrocytic brain cells contribute to the healthy functioning of brain circuits by mediating neuronal network energy and facilitating the formation and stabilization of synaptic connectivity. During development, spontaneous activity influences synaptic formation, shaping brain circuit construction, and adverse astrocyte mutations can lead to pathological processes impacting cognitive impairment due to inefficiencies in network spiking activity. We have developed a measure that quantifies information stability within in vitro networks consisting of mixed neural-astrocyte cells. Brain cells were harvested from mice with mutations to a gene associated with the strongest known genetic risk factor for Alzheimer's disease, APOE. We calculate energy states of the networks and using these states, we present an entropy-based measure to assess changes in information stability over time. We show that during development, stability profiles of spontaneous network activity are modified by exogenous astrocytes and that network stability, in terms of the rate of change of entropy, is allele dependent.}
 }
 
