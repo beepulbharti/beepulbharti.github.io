@@ -2,29 +2,30 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.cs.jhu.edu/'>Johns Hopkins University, Baltimore, MD</a>
+subtitle: PhD Student @ JHU
 
 profile:
   align: right
   image: prof_pic.jpg
   image_cicular: false # crops the image to make it circular
-  address: > # <p>555 your office number</p> <p>123 your address street</p> <p>Your City, State 12345</p>
+  address: >
 
 news: true  # includes a list of news items
 publications: true # includes a list of publications
 preprints: true # includes a list of papers marked as "preprint={true}"
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
 ---
 
-Ciao! I am a PhD student in the Computer Science Department at Johns Hopkins University, where I am honored to be advised by [Jeremias Sulam](https://sites.google.com/view/jsulam) and to be affiliated with the [Mathematical Institute for Data Science](https://www.minds.jhu.edu/). Prior to joining JHU, I obtained my Bachelor's degree in Biomedical Engineering at [Politecnico di Torino, Italy](https://www.polito.it/).
+Hi everyone, my name is Beepul Bharti! I am a PhD student in the [Biomedical Engineering Department][bme] at [Johns Hopkins University][jhu], where I am very fortunate to be advised by [Dr. Jeremias Sulam][js] and be affiliated with the JHU Mathematical Institute of Data Science [(MINDS)][minds] . My PhD research focuses on the statistical understanding of machine learning (ML), the interpretability and fairness of ML algorithms, and how to responsibly utilize/deploy these algorithms in high-stakes decision areas such as governance and healthcare.
 
-My research focuses on:
+Prior to my PhD, I completed my BS in Biomedical Engineering, BA in Mathematics, and minor in Chemistry from [Duke University][duke].
 
-- Formal machine learning explainability,
-- uncertainty quantification,
-- weakly supervised learning for medical imaging.
+In my spare time, I enjoy running, playing soccer, watching basketball, and spending time with family and friends. 
 
-In the past, I have worked with [Rhonda Dzakpasu](https://physics.georgetown.edu/rhonda-dzakpasu/) in the Department of Physics at Georgetown University to study spontaneous activity of *in vitro*, embryonal neural-astrocyte networks.
+[bme]: https://www.bme.jhu.edu/academics/graduate/phd-program/
+[jhu]: https://www.jhu.edu
+[js]: https://sites.google.com/view/jsulam
+[duke]: https://duke.edu
+[minds]: https://www.minds.jhu.edu
 
-**contact:** jtenegg1 at jhu dot edu
