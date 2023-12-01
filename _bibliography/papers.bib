@@ -1,27 +1,13 @@
 ---
 ---
-@article{teneggi2023trust,
-  title        = {How to Trust Your Diffusion model: A Convex Optimization Approach to Conformal Risk Control},
-  author       = {Teneggi, Jacopo and Tivnan, Matthew and Stayman, Web and Sulam, Jeremias},
-  booktitle    = {International Conference on Machine Learning},
-  pages        = {33940--33960},
+@article{bharti2023estimating,
+  title        = {Estimating and Controlling for Equalized Odds via Sensitive Attribute Predictors},
+  author       = {Bharti, Beepul and Yi, Paul and Sulam, Jeremias},
+  booktitle    = {Thirty-seventh Conference on Neural Information Processing Systems},
   year         = {2023},
-  organization = {PMLR},
   selected     = {true},
-  abbr         = {ICML},
-  date         = {Jul. 23, 2023},
-  abstract     = {Score-based generative modeling, informally referred to as diffusion models, continue to grow in popularity across several important domains and tasks. While they provide high-quality and diverse samples from empirical distributions, important questions remain on the reliability and trustworthiness of these sampling procedures for their responsible use in critical scenarios. Conformal prediction is a modern tool to construct finite-sample, distribution-free uncertainty guarantees for any black-box predictor. In this work, we focus on image-to-image regression tasks and we present a generalization of the Risk-Controlling Prediction Sets (RCPS) procedure, that we term K-RCPS, which allows to (i) provide entrywise calibrated intervals for future samples of any diffusion model, and (ii) control a certain notion of risk with respect to a ground truth image with minimal mean interval length. Differently from existing conformal risk control procedures, ours relies on a novel convex optimization approach that allows for multidimensional risk control while provably minimizing the mean interval length. We illustrate our approach on two real-world image denoising problems: on natural images of faces as well as on computed tomography (CT) scans of the abdomen, demonstrating state of the art performance.}
-}
-
-@article{teneggi2022weakly,
-  title    = {Weakly Supervised Learning Significantly Reduces the Number of Labels Required for Intracranial Hemorrhage Detection on Head CT},
-  author   = {Teneggi, Jacopo and Yi, Paul H. and Sulam, Jeremias},
-  journal  = {arXiv preprint arXiv:2211.15924},
-  year     = {2022},
-  preprint = {true},
-  abbr     = {arxiv},
-  date     = {Nov. 29, 2022},
-  url      = {https://arxiv.org/abs/2211.15924},
-  abstract = {Modern machine learning pipelines, in particular those based on deep learning (DL) models, require large amounts of labeled data. For classification problems, the most common learning paradigm consists of presenting labeled examples during training, thus providing strong supervision on what constitutes positive and negative samples. As a result, the adequate training of these models demands the curation of large datasets with high-quality labels. This constitutes a major obstacle for the development of DL models in radiology—in particular for cross-sectional imaging (e.g., computed tomography [CT] scans)—where labels must come from manual annotations by expert radiologists at the image or slice-level. These differ from examination-level annotations, which are coarser but cheaper, and could be extracted from radiology reports using natural language processing techniques. This work studies the question of what kind of labels should be collected for the problem of intracranial hemorrhage detection in brain CT. We investigate whether image-level annotations should be preferred to examination-level ones. By framing this task as a multiple instance learning (MIL) problem, and employing modern attention-based DL architectures, we analyze the degree to which different levels of supervision improve detection performance. We find that strong supervision (i.e., learning with local image-level annotations) and weak supervision (i.e., learning with only global examination-level labels) achieve comparable performance in examination-level hemorrhage detection (the task of selecting the images in an examination that show signs of hemorrhage) as well as in image-level hemorrhage detection (highlighting those signs within the selected images). Furthermore, we study this behavior as a function of the number of labels available during training. Our results suggest that local labels may not be necessary at all for these tasks, drastically reducing the time and cost involved in collecting and curating datasets.}
+  abbr         = {NeurIPS},
+  date         = {Dec. 23, 2023},
+  abstract     = {As the use of machine learning models in real world high-stakes decision settings continues to grow, it is highly important that we are able to audit and control for any potential fairness violations these models may exhibit towards certain groups. To do so, one naturally requires access to sensitive attributes, such as demographics, biological sex, or other potentially sensitive features that determine group membership. Unfortunately, in many settings, this information is often unavailable. In this work we study the well known equalized odds (EOD) definition of fairness. In a setting without sensitive attributes, we first provide tight and computable upper bounds for the EOD violation of a predictor. These bounds precisely reflect the worst possible EOD violation. Second, we demonstrate how one can provably control the worst-case EOD by a new post-processing correction method. Our results characterize when directly controlling for EOD with respect to the predicted sensitive attributes is -- and when is not -- optimal when it comes to controlling worst-case EOD. Our results hold under assumptions that are milder than previous works, and we illustrate these results with experiments on synthetic and real datasets.}
 }
 
