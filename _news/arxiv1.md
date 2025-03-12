@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2024-10-07 07:59:00-0400
+date: 2025-03-12 07:59:00-0400
 inline: true
 ---
 
-Our latest preprint "[Sufficient and Necessary Explanations (and What Lies in Between)][arxiv_link]” has been posted on arxiv!
+Our paper "[Sufficient and Necessary Explanations (and What Lies in Between)][cpal_link]” has been accepted to the Conference on Parsimony and Learning (CPAL) 2025.
 
-[arxiv_link]: https://arxiv.org/abs/2409.20427
+[cpal_link]: https://openreview.net/pdf?id=H43BmpeJII
